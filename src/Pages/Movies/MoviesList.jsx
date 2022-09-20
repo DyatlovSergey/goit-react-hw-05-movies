@@ -8,7 +8,7 @@ const MoviesList = ({ response }) => {
       {response.results.map(movie => (
         <li key={movie.id} >
           <Link to={`/movies/${movie.id}`} state={{ from: location }}>
-            <img
+            {/* <img
               src={
                 movie.poster_path
                   ? `https://image.tmdb.org/t/p/w300${movie.poster_path}`
@@ -16,7 +16,7 @@ const MoviesList = ({ response }) => {
               }
               alt={movie.title}
               width="100px"
-            />
+            /> */}
             <h3 >{movie.title}</h3>
           </Link>
         </li>

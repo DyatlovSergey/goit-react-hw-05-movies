@@ -27,25 +27,35 @@
 // import "./App.css";
 import { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-// import Navigation from "./components/Navigation";
+import Navigation from "./Components/Navigation/Navigation";
 import { ToastContainer } from "react-toastify";
 // import Cast from "./components/Cast/Cast";
 // import Reviews from "./components/Reviews/Reviews";
 
 const HomePage = lazy(() =>
-  import("./Pages/Home/HomePage" /* webpackChunkName: "home-page" */)
+  import("./Pages/Home/HomePage.jsx" /* webpackChunkName: "home-page" */)
 );
+// const MovieDetailsPage = lazy(() =>
+//   import(
+//     "./views/MovieDetailsPage/MovieDetailsPage.jsx" /* webpackChunkName: "movies-detail" */
+//   )
+// );
+// const MoviesPage = lazy(() =>
+//   import(
+//     "./views/MoviesPage/MoviesPage.jsx" /* webpackChunkName: "movies-page" */
+//   )
+// );
 
-function App() {
+export const App = () => {
   return (
     <section>
       <ToastContainer />
-      {/* <Navigation /> */}
+      <Navigation />
       <Suspense fallback={<h1>Loading...</h1>}>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          {/* <Route path="/movies" element={<MoviesPage />} /> */}
-          {/* <Route path="/movies/:id" element={<MovieDetailsPage />}>
+          <Route exact path="/" element={<HomePage />} />
+          {/* <Route path="/movies" element={<MoviesPage />} />
+          <Route path="/movies/:id" element={<MovieDetailsPage />}>
             <Route path="/movies/:id/cast" element={<Cast />} />
             <Route path="/movies/:id/reviews" element={<Reviews />} />
           </Route> */}
@@ -53,6 +63,6 @@ function App() {
       </Suspense>
     </section>
   );
-}
+};
 
 export default App;

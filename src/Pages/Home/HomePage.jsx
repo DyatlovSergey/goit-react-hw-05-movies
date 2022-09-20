@@ -12,6 +12,7 @@ const HomePage = () => {
   }, []);
   return (
     <section >
+      
       <HTag title="Trending Today" />
       {popularMovies && <MoviesList response={popularMovies} />}
     </section>
