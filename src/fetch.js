@@ -27,27 +27,27 @@ export function fetchPopularMovies() {
   );
 }
 
-// export function fetchMovieDetails(movieId) {
-//   const id = movieId;
-//   return fetchMovies(
-//     `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`
-//   );
-// }
+export function fetchMovieDetails(movieId) {
+  const id = movieId;
+  return fetchMovies(
+    `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`
+  );
+}
 
-// export function fetchMovieCast(movieId) {
-//   return fetchMovies(
-//     `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${API_KEY}`
-//   );
-// }
+export function fetchMovieCast(movieId) {
+  return fetchMovies(
+    `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${API_KEY}`
+  );
+}
 
-// export function fetchMovieReviews(movieId) {
-//   return fetchMovies(
-//     `https://api.themoviedb.org/3/movie/${movieId}/reviews?api_key=${API_KEY}`
-//   );
-// }
+export function fetchMovieReviews(movieId) {
+  return fetchMovies(
+    `https://api.themoviedb.org/3/movie/${movieId}/reviews?api_key=${API_KEY}`
+  );
+}
 
-// export function fetchSearchMovies(query) {
-//   return fetchMovies(
-//     `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}`
-//   );
-// }
+export function fetchSearchMovies(query) {
+  return fetchMovies(
+    `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}`
+  );
+}
