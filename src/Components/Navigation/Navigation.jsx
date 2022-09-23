@@ -1,3 +1,4 @@
+
 import s from './Navigation.module.css';
 import { NavLink } from 'react-router-dom';
 
@@ -8,7 +9,7 @@ const Navigation = () => {
   return (
     <header className={s.header}>
       <nav>
-        <NavLink to="/" className={activeLink}>
+        <NavLink to="/home" className={activeLink}>
           Home
         </NavLink>
         <NavLink to="/movies" className={activeLink}>
