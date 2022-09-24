@@ -9,7 +9,8 @@
 }
 
 .infoBox {
-    width: 65%;
+    max-width: 65%;
+    margin-left: 30px;
 }
 
 .title {
@@ -36,15 +37,20 @@
 }
 
 .imageBox {
-    width: 30%;
+    max-width: 35%;
+}
+.imageBox img {
+    max-width: 100%;
 }
 
 .linkList {
     display: flex;
     margin-bottom: 10px;
+justify-content: center;
 }
 
 .link {
+
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
@@ -62,7 +68,7 @@
 .link:focus,
 .goBackButton:hover,
 .goBackButton:focus {
-    background-color: rgb(156, 99, 209);
+    background-color: rgb(36, 160, 14);
     color: rgb(248, 248, 248);
 }
 

@@ -8,8 +8,8 @@ const Navigation = () => {
 
   return (
     <header className={s.header}>
-      <nav>
-        <NavLink to="/home" className={activeLink}>
+      <nav className={s.nav}>
+        <NavLink to="/" className={activeLink}>
           Home
         </NavLink>
         <NavLink to="/movies" className={activeLink}>

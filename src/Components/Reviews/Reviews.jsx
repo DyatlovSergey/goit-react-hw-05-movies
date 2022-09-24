@@ -12,7 +12,7 @@ const Reviews = () => {
   }, [id]);
 
     return (
-      
+
     <>
       {reviews && reviews.total_results === 0 && (
         <p>We don't have any reviews for this movie</p>
