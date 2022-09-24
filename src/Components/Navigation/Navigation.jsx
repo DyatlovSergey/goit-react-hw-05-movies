@@ -9,7 +9,7 @@ const Navigation = () => {
   return (
     <header className={s.header}>
       <nav className={s.nav}>
-        <NavLink to="/" className={activeLink}>
+        <NavLink to="/" end className={activeLink}>
           Home
         </NavLink>
         <NavLink to="/movies" className={activeLink}>

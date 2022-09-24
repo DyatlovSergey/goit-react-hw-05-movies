@@ -20,7 +20,9 @@ function App() {
       <Navigation />
       <Suspense fallback={<h1>Loading...</h1>}>
         {/* <nav>
-          <Link to="/">Home</Link>
+          <Link to="/" end>
+            Home
+          </Link>
           <Link to="/movies">Movies</Link>
         </nav> */}
         <Routes>
